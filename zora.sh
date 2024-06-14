@@ -49,7 +49,8 @@ export CONDUIT_NETWORK=zora-mainnet-0
 echo "OP_NODE_L1_ETH_RPC=$ETHEREUM_RPC_ENDPOINT
 OP_NODE_L1_BEACON=https://beaconstate.info" > $HOME/$DAEMON_NAME/node/.env
 
-echo "docker compose up --build" > /usr/local/bin/$DAEMON_NAME
+echo "docker compose up --build" > ./bin/$DAEMON_NAME
+sudo mv ./bin/$DAEMON_NAME  /usr/local/bin/ || exit
 
 $DAEMON_NAME config keyring-backend test
 
