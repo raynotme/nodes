@@ -52,8 +52,6 @@ OP_NODE_L1_BEACON=https://beaconstate.info" > $HOME/$DAEMON_NAME/node/.env
 echo "docker compose up --build" > $HOME/$DAEMON_NAME/$DAEMON_NAME
 sudo mv $HOME/$DAEMON_NAME/$DAEMON_NAME /usr/local/bin/ || exit
 
-$DAEMON_NAME config keyring-backend test
-
 echo "[Unit]
 Description=$NODE Node
 After=network.target
