@@ -40,7 +40,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose -y
 
 echo -e '\n\e[42mInstall software\e[0m\n' && sleep 1
-cd $NODE
+cd $HOME/$DAEMON_NAME
 git clone https://github.com/conduitxyz/node.git
 cd node
 ./download-config.py zora-mainnet-0
