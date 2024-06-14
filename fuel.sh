@@ -45,7 +45,7 @@ echo -e '\n\e[42mInstall software\e[0m\n' && sleep 1
 echo "fuel-core run
 --service-name=fuel-sepolia-testnet-node
 --keypair $FUEL_P2P_PRIVATE_KEY
---relayer $ETHEREUM_RPC_ENDPOINT
+--relayer $SEPOLIA_RPC_ENDPOINT
 --ip=0.0.0.0 --port=4000 --peering-port=30333
 --db-path=~/.fuel-sepolia-testnet
 --snapshot ./chain-configuration/ignition/
